@@ -969,19 +969,13 @@
             background: rgba(255,255,255,.72);
         }
         .unlock-image-wrap::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: rgba(255,255,255,.22);
-            backdrop-filter: blur(7px);
-            -webkit-backdrop-filter: blur(7px);
-            pointer-events: none;
+           display: none;
         }
         .unlock-image-wrap img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            opacity: .72;
+            opacity: 1;
             transform: scale(1);
             border-radius: 15px;
             display: block;
@@ -1277,7 +1271,6 @@
 
                                 <div class="unlock-image-wrap">
                                     <img id="result-unlock-image" src="./img-a.png" alt="추천 아이템 미리보기">
-                                    <span class="unlock-lock"><i class="fa-solid fa-lock"></i></span>
                                 </div>
 
                                 <p class="unlock-subtext" style="margin-top:10px; margin-bottom:20px; line-height:1.45;">
